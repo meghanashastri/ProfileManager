@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ProfileManager</string>
+    <string name="tvMovementOfUser">Movement</string>
+    <string name="tvSetTime">Time</string>
+    <string name="tvBattery">Battery</string>
+    <string name="tvLocationOfUser">Location</string>
 </resources>

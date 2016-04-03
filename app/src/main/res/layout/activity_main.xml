@@ -9,8 +9,143 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.admin.profilemanager.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            >
+            <RelativeLayout
+                android:background="@drawable/location_selector"
+                android:layout_below="@+id/tool_bar"
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/ivLocation"
+                    android:background="@drawable/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvLocationOfUser"
+                    android:layout_below="@+id/ivLocation"
+                    android:textSize="@dimen/text_size_25"
+                    android:textStyle="italic"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:background="@drawable/battery_selector"
+                android:layout_below="@+id/tool_bar"
+                android:id="@+id/battery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp">
+
+                <ImageView
+                    android:id="@+id/ivBattery"
+                    android:background="@drawable/battery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvBattery"
+                    android:layout_below="@+id/ivBattery"
+                    android:textSize="@dimen/text_size_25"
+                    android:textStyle="italic"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            >
+
+            <RelativeLayout
+                android:background="@drawable/time_selector"
+                android:layout_below="@+id/tool_bar"
+                android:id="@+id/timer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/ivTimer"
+                    android:background="@drawable/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvSetTime"
+                    android:layout_below="@+id/ivTimer"
+                    android:textSize="@dimen/text_size_25"
+                    android:textStyle="italic"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:background="@drawable/movement_selector"
+                android:id="@+id/movement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp">
+
+                <ImageView
+                    android:id="@+id/ivMovement"
+                    android:background="@drawable/car"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvMovementOfUser"
+                    android:layout_below="@+id/ivMovement"
+                    android:textSize="@dimen/text_size_25"
+                    android:textStyle="italic"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+
+        </TableRow>
+    </TableLayout>
 </RelativeLayout>
