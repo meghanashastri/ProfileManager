@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="ColorPrimary">#FF2554C7</color>
+    <color name="ColorPrimaryDark">#FF15317E</color>
+    <color name="ColorText">#FFFFFFFF</color>
     <color name="LocationColor">#FF9c404b</color>
     <color name="BatteryColor">#FFEAC117</color>
     <color name="TimerColor">#FFA981B2</color>

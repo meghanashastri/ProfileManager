@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.example.admin.profilemanager.R;
 
@@ -13,13 +14,16 @@ import com.example.admin.profilemanager.R;
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private RelativeLayout tvMovementOfUser,tvTimer,tvBatteryOfPhone,tvLocationOfUser;
+    private android.support.v7.widget.Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        initialseToolbar();
         initialiseViews();
     }
     public void initialiseViews(){
+
         tvLocationOfUser=(RelativeLayout) findViewById(R.id.location);
         tvLocationOfUser.setOnClickListener(this);
         tvMovementOfUser=(RelativeLayout) findViewById(R.id.movement);
@@ -29,11 +33,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvBatteryOfPhone=(RelativeLayout) findViewById(R.id.battery);
         tvBatteryOfPhone.setOnClickListener(this);
     }
+
+    private void initialseToolbar(){
+        toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.tool_bar);
+        setSupportActionBar(toolbar);
+    }
     @Override
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.timer:
-                goToNextActivity(TimerActivity.class);
+                goToNextActivity(TimeActivity.class);
                 break;
             case R.id.movement:
                goToNextActivity(MovementActivity.class);

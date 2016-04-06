@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/noEvents">
+
+    <TextView
+        android:id="@+id/tvNoItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvNoItems"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/text_size_24"/>
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNoItems"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin_10dp"
+        android:text="@string/btnAddItems"
+        android:background="@drawable/time_selector"/>
+
+</RelativeLayout>

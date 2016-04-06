@@ -4,4 +4,6 @@
     <string name="tvSetTime">Time</string>
     <string name="tvBattery">Battery</string>
     <string name="tvLocationOfUser">Location</string>
+    <string name="tvNoItems">No Items present</string>
+    <string name="btnAddItems">Add Items</string>
 </resources>
